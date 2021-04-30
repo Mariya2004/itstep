@@ -14,11 +14,11 @@
     <ol>
         <li><a href="#css">Определение понятия CSS</a></li>
         <li><a href="#menu2">Способы подключения CSS к документу</a></li>
-        <li>Правила построения CSS</li>
-        <li>Пример таблицы стилей</li>
+        <li><a href="#menu3">Правила построения CSS</a></li>
+        <li><a href="#menu4">Пример таблицы стилей</a></li>
     </ol>
     <p id="css">
-        <strong>CSS</strong>  ( англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, 
+        <strong>CSS</strong>  ( англ. <em>Cascading Style Sheets — каскадные таблицы стилей</em>) — формальный язык описания внешнего вида документа, 
 написанного с использованием языка разметки.
     </p>
     <p>
@@ -40,30 +40,30 @@
         То есть, эти таблицы стилей могут быть подключены, внедрены в описываемый ими веб-документ четырьмя различными способами:</p>
         <ul>
             <li>
-            - когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством тега <span class="green">&lt;link&gt;</span>, 
+             когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством тега <span class="green">&lt;link&gt;</span>, 
 располагающегося в этом документе между тегами <span class="green">&lt;head&gt;</span> и <span class="green">&lt;/head&gt;</span>. 
 (Тег <span class="green">&lt;link&gt;</span> будет иметь атрибут <span class="blue">href</span>, имеющий значением адрес этой таблицы стилей).
  Все правила этой таблицы действуют на протяжении всего документа;
             </li>
             <li>
-            - когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством директивы @import,
+             когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством директивы @import,
  располагающейся в этом документе между тегами <span class="green">&lt;style&gt;</span> и <span class="green">&lt;/style&gt;</span> 
  (которые, в свою очередь, располагаются в этом документе между тегами <span class="green">&lt;head&gt;</span>  и <span class="green">&lt;/head&gt;</span>) 
  сразу после тега <span class="green">&lt;style&gt;</span>, которая также указывает (в своих скобках, после слова url) на адрес этой таблицы стилей. 
  Все правила этой таблицы действуют на протяжении всего документа;
             </li>
             <li>
-            - когда таблица стилей описана в самом документе, она может располагаться в нём между тегами <span class="green">&lt;style&gt;</span>  и <span class="green">&lt;/style&gt;</span>  
+             когда таблица стилей описана в самом документе, она может располагаться в нём между тегами <span class="green">&lt;style&gt;</span>  и <span class="green">&lt;/style&gt;</span>  
 (которые, в свою очередь, располагаются в этом документе между тегами <span class="green">&lt;head&gt;</span> и <span class="green">&lt;/head&gt;</span>). 
 Все правила этой таблицы действуют на протяжении всего документа;
             </li>
             <li>
-            - когда таблица стилей описана в самом документе, она может располагаться в нём в теле какого-то отдельного тега (
+             когда таблица стилей описана в самом документе, она может располагаться в нём в теле какого-то отдельного тега (
 посредством его атрибута style) этого документа.
  Все правила этой таблицы действуют только на содержимое этого тега.
             </li>
         </ul>
-    <h2>
+    <h2 id="menu3">
         Правила построения CSS
     </h2>
     <p>
@@ -80,7 +80,7 @@
     <p>
         В таком случае свойство применяется к каждому из них.
     </p>
-    <h2>
+    <h2 id="menu4">
         Пример таблицы стилей
     </h2>
     <p>
@@ -88,22 +88,22 @@
             и размещена в «шапке» той самой веб-страницы, на которую она действует):
     </p>
     <pre>
-        p {
-            font-family: arial, helvetica, sans-serif; 
+       <span class="yellow">p</span> {
+           <span class="turquoise">font-family</span>: <span class="red">arial</span>, <span class="red">helvetica</span>, <span class="red">sans-serif</span>; 
          }
-         h2 {
-            font-size: 20pt; 
-            color: red; 
-            background: white; 
+        <span class="yellow">h2</span> {
+           <span class="turquoise">font-size</span>: <span class="red">20pt</span>; 
+           <span class="turquoise">color</span>: <span class="red">red</span>; 
+          <span class="turquoise">background</span>: <span class="red">white</span>; 
          }
-         .note {
-            color: red; 
-            background-color: yellow; 
-            font-weight: bold; 
+        <span class="yellow">.note</span> {
+           <span class="turquoise">color</span>: <span class="red">red</span>; 
+           <span class="turquoise">background-color</span>: <span class="red">yellow</span>; 
+           <span class="turquoise">font-weight</span>: <span class="red">bold</span>; 
          }
-         p#paragraph1 {
-            padding-left: 10px;
+        <span class="yellow">p#paragraph1</span> {
+           <span class="turquoise">padding-left</span>: <span class="red">10px</span>;
          }
-    </pre>
+    </pre> 
 </body>
 </html>

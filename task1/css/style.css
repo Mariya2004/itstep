@@ -20,7 +20,7 @@ h2{
 }
 
 .blue{
-    color: blue;
+    color: rgb(0, 0, 255);
 }
 
 strong{
@@ -33,4 +33,16 @@ strong{
 
 em{
     font-weight: bold;
+}
+
+.yellow{
+    color: rgb(252, 162, 46);
+}
+
+.turquoise {
+    color: rgb(107, 216, 205);
+}
+
+.red{
+    color: rgb(216, 25, 25);
 }
