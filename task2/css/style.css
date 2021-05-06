@@ -1,0 +1,38 @@
+p{
+    font-size: 30px;
+    color: #787878;
+    letter-spacing: 5px;
+    word-spacing: 40px;
+}
+
+ins + span{
+    text-decoration: overline;
+}
+
+span{
+    text-decoration: overline;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+body > p > ins > del{
+    text-shadow: 0px 0px 10px #ffa500;
+}
+
+body > p > ins.bold > del{
+    font-size: 35px;
+}
+
+.pink{
+    color: rgba(255, 192, 203, 0.5);
+}
+
+.square{
+    color: transparent;
+}
+
+.square:hover{
+    color: #808080;
+}
