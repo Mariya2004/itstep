@@ -1,0 +1,68 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td{
+    width: 100px;
+    height: 80px;
+    border: 1px solid #000;
+    font-size: 30px;
+    text-align: right;
+}
+
+caption{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+tr:nth-child(1) td{
+    text-align: center;
+    font-size: 20px;
+}
+
+tr td:nth-child(6){
+    color: #ff0000;
+}
+
+tr td:nth-child(7){
+    color: #ff0000;
+}
+
+tr:nth-child(2) td:nth-child(1){
+    color: #808080;
+}
+
+tr:nth-child(2) td:nth-child(2){
+    color: #808080;
+}
+
+tr:nth-child(2) td:nth-child(3){
+    color: #808080;
+}
+
+tr:nth-child(6) td:nth-child(6){
+    color: #808080;
+}
+
+tr:nth-child(6) td:nth-child(7){
+    color: #808080;
+}
+
+tr:nth-child(2) td:nth-child(4){
+    background-image: url(../img/1_aprelya.jpg);
+    background-size: cover;
+}
+
+tr:nth-child(6) td:nth-child(5){
+    background-image: url(../img/1-20.jpg);
+    background-size: cover;
+}
+
+tr:nth-child(3) td:nth-child(3){
+    background-image: url(../img/199267_1586233560.jpg);
+    background-size: cover;
+}
+
+span{
+    font-size: 20px;
+}
