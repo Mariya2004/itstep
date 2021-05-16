@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Java Script</title>
+</head>
+
+<body>
+    <header>
+        <div class="js">
+            <img src="./img/JS" alt="картинка">
+        </div>
+    </header>
+    <ul class="ul">
+        <li> <a href="#what"> JavaScript</a></li>
+        <li> <a href="#history"> История создания JavaScript</a></li>
+        <li> <a href="#structure"> Структура языка</a></li>
+        <li> <a href="#example"> Примеры кода</a></li>
+    </ul>
+    <h1 id="what">Знакомство с JavaScript</h1>
+    <div class="main">
+
+        <dl> <strong>JavaScript —</strong> мультипарадигменный язык программирования.
+            Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией
+            спецификации ECMAScript (стандарт ECMA-262).</dl>
+
+        <p>
+            JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений.
+            Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности
+            веб-страницам.
+        </p>
+    </div>
+    <div id="history" class="main2">
+        <h2>История создания JavaScript</h2>
+        <div>
+            <img src="./img/125px-BEich.jpg" alt="фото" class="beich">
+            <p> В 1992 году компания Nombas (впоследствии приобретённая Openwave) начала разработку встраиваемого
+                скриптового языка Cmm (Си-минус-минус), который, по замыслу разработчиков, должен был стать достаточно
+                мощным, чтобы заменить макросы, сохраняя при этом схожесть с Си, чтобы разработчикам не составляло труда
+                изучить его. Главным отличием от Си была работа с памятью. В новом языке всё управление памятью
+                осуществлялось автоматически: не было необходимости создавать буферы, объявлять переменные, осуществлять
+                преобразование типов. В остальном языки сильно походили друг на друга: в частности, Cmm поддерживал
+                стандартные функции и операторы Си. Cmm был переименован в ScriptEase, поскольку исходное название
+                звучало слишком негативно, а упоминание в нём Си «отпугивало» людей. На основе этого языка был
+                создан проприетарный продукт CEnvi. В конце ноября 1995 года Nombas разработала версию CEnvi, внедряемую
+                в
+                веб-страницы. Страницы, которые можно было изменять с помощью скриптового языка, получили название
+                Espresso
+                Pages — они демонстрировали использование скриптового языка для создания игры, проверки
+                пользовательского
+                ввода в формы и создания анимации. Espresso Pages позиционировались как демоверсия, призванная помочь
+                представить, что случится, если в браузер будет внедрён язык Cmm. Работали они только в 16-битовом
+                Netscape
+                Navigator под управлением Windows.
+            </p>
+            <p>
+                Самая первая реализация JavaScript была создана Бренданом Эйхом (Brendan Eich) в компании Netscape, и с
+                тех
+                пор обновляется, чтобы соответствовать ECMA-262 Edition 5 и более поздним версиям. Этот движок
+                называется
+                SpiderMonkey и реализован на языке C/C++. Движок Rhino создан Норрисом Бойдом (Norris Boyd) и реализован
+                на
+                языке Java. Как и SpiderMonkey, Rhino соответствует ECMA-262 Edition 5.
+            </p>
+            <p>
+                Перед Бренданом Эйхом, нанятым в компанию Netscape 4 апреля 1995 года, была поставлена задача
+                внедрить язык программирования Scheme или что-то похожее в браузер Netscape. Поскольку требования были
+                размыты, Эйха перевели в группу, ответственную за серверные продукты, где он проработал месяц, занимаясь
+                улучшением протокола HTTP. В мае разработчик был переброшен обратно, в команду, занимающуюся
+                клиентской частью (браузером), где он немедленно начал разрабатывать концепцию нового языка
+                программирования. Менеджмент разработки браузера, включая Тома Пакина (Tom Paquin), Михаэля Тоя (англ.),
+                Рика Шелла (Rick Schell), был убеждён, что Netscape должен поддерживать язык программирования,
+                встраиваемый в HTML-код страницы.
+            </p>
+            <img src="./img/125px-Marc_Andreessen.jpg" alt="фото" class="marc">
+            <p>
+                Помимо Брендана Эйха, в разработке участвовали сооснователь Netscape Communications Марк
+                Андрессен и сооснователь Sun Microsystems Билл Джой: чтобы успеть закончить работы над языком к релизу
+                браузера, компании заключили соглашение о сотрудничестве в разработке. Они ставили перед собой цель
+                обеспечить «язык для склеивания» составляющих частей веб-ресурса: изображений, плагинов, Java-апплетов,
+                который был бы удобен для веб-дизайнеров и программистов, не обладающих высокой квалификацией.
+            </p>
+            <p>
+                В 1996 году компания Microsoft выпустила аналог языка JavaScript, названный JScript. Анонсирован этот
+                язык был 18 июля 1996 года. Первым браузером, поддерживающим эту реализацию, был Internet Explorer
+                3.0.
+            </p>
+            <p>
+                По инициативе компании Netscape была проведена стандартизация языка ассоциацией ECMA.
+                Стандартизированная версия имеет название ECMAScript, описывается стандартом ECMA-262. Первой версии
+                спецификации соответствовал JavaScript версии 1.1, а также языки JScript и ScriptEasy.
+            </p>
+        </div>
+    </div>
+    <div id="structure" class="structure">
+        <h2>Структура языка</h2>
+        <div>
+            <p>Структурно JavaScript можно представить в виде объединения трёх чётко различимых друг от друга частей:
+            </p>
+            <ol>
+                <li>ядро (ECMAScript),</li>
+                <li>объектная модель браузера (Browser Object Model или BOM (англ.)),</li>
+                <li>объектная модель документа (Document Object Model или DOM).</li>
+            </ol>
+            <p>
+                <i><u><b>ECMAScript</b></u></i> не является браузерным языком и в нём не определяются методы ввода и
+                вывода
+                информации.
+                Это, скорее, основа для построения скриптовых языков. Спецификация ECMAScript описывает типы данных,
+                инструкции, ключевые и зарезервированные слова, операторы, объекты, регулярные выражения, не ограничивая
+                авторов производных языков в расширении их новыми составляющими.
+            </p>
+            <p>
+                <i><u><b>Объектная модель браузера</b></u></i> — браузер-специфичная часть языка, являющаяся прослойкой
+                между ядром и
+                объектной моделью документа. Основное предназначение объектной модели браузера — управление окнами
+                браузера и обеспечение их взаимодействия. Каждое из окон браузера представляется объектом window,
+                центральным объектом DOM. Объектная модель браузера на данный момент не стандартизирована,
+                однако спецификация находится в разработке WHATWG и W3C.
+            </p>
+            <p>
+                Помимо управления окнами, в рамках объектной модели браузера, браузерами обычно обеспечивается поддержка
+                следующих сущностей:
+            </p>
+            <ul>
+                <li>управление фреймами,</li>
+                <li>поддержка задержки в исполнении кода и зацикливания с задержкой,</li>
+                <li>системные диалоги,</li>
+                <li>управление адресом открытой страницы,</li>
+                <li>управление информацией о браузере,</li>
+                <li>управление информацией о параметрах монитора,</li>
+                <li>ограниченное управление историей просмотра страниц,</li>
+                <li>поддержка работы с HTTP cookie.</li>
+            </ul>
+            <p>
+                <i><u><b>Объектная модель документа</b></u></i> — интерфейс программирования приложений для HTML и
+                XML-документов.
+                Согласно DOM, документ (например, веб-страница) может быть представлен в виде дерева объектов,
+                обладающих рядом свойств, которые позволяют производить с ним различные манипуляции:
+            </p>
+            <ul>
+                <li>генерация и добавление узлов,</li>
+                <li>получение узлов,</li>
+                <li>изменение узлов,</li>
+                <li>изменение связей между узлами,</li>
+                <li>удаление узлов.</li>
+            </ul>
+            <table>
+                <caption>Платформы исполнения серверных приложений на JavaScript</caption>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Используемый движок JavaScript</th>
+                        <th>Языки, на которых написан движок и платформа</th>
+                        <th>Лицензия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jaxer</td>
+                        <td>SpiderMonkey</td>
+                        <td>C++, C</td>
+                        <td>GPL 3</td>
+                    </tr>
+                    <tr>
+                        <td>persevere-framework</td>
+                        <td>Rhino</td>
+                        <td>Java</td>
+                        <td>Модифицированная лицензия BSD</td>
+                    </tr>
+                    <tr>
+                        <td>Helma</td>
+                        <td>Rhino</td>
+                        <td>Java, JavaScript</td>
+                        <td>BSD-подобная Helma License 2.0</td>
+                    </tr>
+                    <tr>
+                        <td>v8cgi</td>
+                        <td>V8</td>
+                        <td>C++, JavaScript</td>
+                        <td>Лицензия BSD</td>
+                    </tr>
+                    <tr>
+                        <td>node.js</td>
+                        <td>V8</td>
+                        <td>C++</td>
+                        <td>Лицензия MIT</td>
+                    </tr>
+                    <tr>
+                        <td>gopherjs</td>
+                        <td>Go</td>
+                        <td>Go</td>
+                        <td>Лицензия BSD</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4"> <a href="https://www.torrentfreak.com"> torrentfreak.com</a></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div id="example">
+        <h2>Примеры кода</h2>
+        <div class="example">
+            <div class="flex">
+                <h3>Переменные</h3>
+                <p><span class="const">const</span> <span class="something">something</span> <span
+                        class="clwhite">=</span> <span class="clred">'y'</span></p>
+                <p><span class="const">const</span> <span class="something">x</span> <span class="clwhite">= {</span>
+                </p>
+                <p><span class="clblue">something:</span> <span class="something">something</span></p>
+                <p><span class="clwhite">}</span></p>
+            </div>
+            <div class="flex">
+                <h3>Пример функции в JavaScript</h3>
+                <p>
+                    <span class="const">function</span> <span class="clyellow">dosomething</span><span
+                        class="clwhite">(</span><span class="clblue">foo</span><span class="clwhite">) {</span>
+                </p>
+                <p>
+                    <span class="clpurple">return</span> <span class="clblue">foo</span> <span class="clwhite">*</span>
+                    <span class="clyellow">2</span>
+                </p>
+                <p><span class="clwhite">}</span></p>
+                <p><span class="const">const</span> <span class="clyellow">dosomething</span> <span
+                        class="clwhite">=</span> <span class="const">function</span><span class="clwhite">(</span><span
+                        class="clblue">foo</span><span class="clwhite">) {</span></p>
+                <p><span class="clpurple">return</span> <span class="clblue">foo</span> <span class="clwhite">*</span>
+                    <span class="clyellow">2</span>
+                </p>
+                <p><span class="clwhite">}</span></p>
+            </div>
+            <div class="flex">
+                <h3>Пример стрелочной функции</h3>
+                <p><span class="const">const</span> <span class="clyellow">foo1</span> <span class="clwhite">= ()</span>
+                    <span class="const">=></span> <span class="clwhite">{</span>
+                </p>
+                <p><span class="clgreen">//...</span></p>
+                <p><span class="clwhite">}</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="tegs">
+            <h3>Список используемых тегов</h3>
+            <ol>
+                <li>div</li>
+                <li>span</li>
+                <li>p</li>
+                <li>a</li>
+                <li>img</li>
+                <li>ul</li>
+                <li>ol</li>
+                <li>li</li>
+                <li>strong</li>
+                <li>i</li>
+                <li>b</li>
+                <li>table</li>
+                <li>caption</li>
+                <li>thead</li>
+                <li>tbody</li>
+                <li>tfoot</li>
+                <li>tr</li>
+                <li>th</li>
+                <li>td</li>
+                <li>h1</li>
+                <li>h2</li>
+                <li>h3</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>u</li>
+                <li>dl</li>
+                <li>head</li>
+                <li>title</li>
+                <li>meta</li>
+                <li>link</li>
+                <li>body</li>
+                <li>br</li>
+            </ol>
+        </div>
+        <div class="property">
+            <h3>Список используемых свойств CSS</h3>
+            <ol>
+                <li>color</li>
+                <li>font-size</li>
+                <li>font-famaly</li>
+                <li>font-weight</li>
+                <li>font-style</li>
+                <li>text-align</li>
+                <li>line-height</li>
+                <li>background-color</li>
+                <li>float</li>
+                <li>margin</li>
+                <li>margin-right</li>
+                <li>margin-left</li>
+                <li>margin-top</li>
+                <li>margin-bottom</li>
+                <li>padding</li>
+                <li>padding-left</li>
+                <li>padding-right</li>
+                <li>padding-top</li>
+                <li>padding-bottom</li>
+                <li>font-weight</li>
+                <li>border</li>
+                <li>border-width</li>
+                <li>border-collapse</li>
+                <li>border-spacing</li>
+                <li>border-color</li>
+                <li>border-style</li>
+                <li>vertical-align</li>
+                <li>width</li>
+                <li>height</li>
+                <li>display</li>
+                <li>justify-content</li>
+                <li>text-decoration</li>
+                <li>cursor</li>
+                <li>content</li>
+                <li>position</li>
+                <li>letter-spacing</li>
+                <li>box-sizing</li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        2021
+    </footer>
+</body>
+
+</html>

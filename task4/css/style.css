@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Coiny';
+    src: url(../fonts/Coiny.ttf);
+}
+
+body{
+    padding: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgb(242, 242, 250);
+    letter-spacing: 0.6px;
+    position: static;
+}
+
+h1{
+    font-family: 'Coiny', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(50, 50, 133);
+}
+
+h2{
+    font-family: 'Coiny', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(50, 50, 133);
+} 
+
+h3{
+    font-family: 'Coiny', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(190, 190, 253); 
+}
+
+.beich{
+    float: right;
+    margin-left: 20px;
+}
+
+.marc{
+    float: left;
+    margin-right: 20px;
+}
+
+.main{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main2{
+    margin-bottom: 40px;
+}
+
+caption{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table{
+    margin: 40px auto auto auto;
+    border-collapse: collapse;
+    border: 1px solid #6b6bf8;
+    width: 1000px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+th{
+    border: 1px solid #6b6bf8;
+    background-color: #bbbbfa;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid #6b6bf8;
+    background-color: #e8e8fc;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #4242fa;
+    padding: 10px;
+}
+
+tr:nth-child(2) td{
+    background-color: #ffffff;
+}
+
+tr:nth-child(4) td{
+    background-color: #ffffff;
+}
+
+tr:nth-child(6) td{
+    background-color: #ffffff;
+}
+
+tfoot tr th{
+    text-align: left;
+}
+
+.structure{
+    margin-bottom: 40px;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.example{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex h3{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.const{
+    color: rgb(61, 61, 189);
+}
+
+.flex{
+    background-color: rgb(32, 32, 32);
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex span{
+    font-size: 18px;
+}
+
+.something{
+    color: rgb(60, 176, 221);
+}
+
+.clwhite{
+    color: white;
+}
+
+.clred{
+    color: rgb(172, 44, 44);
+}
+
+.clblue{
+    color: rgb(143, 219, 233);
+}
+
+.clyellow{
+    color: rgb(245, 245, 124);
+}
+
+.clpurple{
+    color: purple;
+}
+
+.clgreen{
+    color: rgb(5, 151, 5);
+}
+
+
+.ul li::marker{
+    content: url(../img/star.jpg);
+
+}
+
+.ul a{
+    margin-left: 10px;
+}
+
+.js{
+   text-align: center;
+}
+
+.end h3{
+    color: rgb(50, 50, 133); 
+}
+
+.end{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+footer{
+    color: rgb(50, 50, 133);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
