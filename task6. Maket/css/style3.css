@@ -1,0 +1,36 @@
+.main{
+    width: 400px;
+    height: 400px;
+}
+
+div{
+    text-align: center;
+    position: relative;
+    float: left;
+    font-size: 20px;
+
+}
+
+.block-item3{
+    width: 100px;
+    height: 300px;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+}
+
+.block4{
+    width: 100px;
+    height: 200px;
+    background-color: turquoise;
+}
+
+.clyellow{
+    background-color: yellow;
+}
+
+.clred{
+    background-color: red;
+}
