@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-bottom: 5px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+}
+
+    .box.chet{
+        background-color: red;
+        margin: auto auto 5px auto;
+    }
+
+    .box.nechet{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 400px;
+        flex-wrap: wrap;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nechet{
+        background-color: blue;
+        margin: auto 5px 5px 5px;
+    }
+
+    .chet{
+        display: none;
+    }
+}
+
+@media (min-width: 1280px){
+   .container{
+       width: 700px;
+   }
+
+   .chet{
+       display: block;
+       background-color: red;
+   }
+}
