@@ -296,12 +296,19 @@ div{
 .cl7{
     background: #32cd32;
 }
+.cl71{
+	background: #ADFF2F;
+}
+.cl72{
+	background: #00FF00;
+}
 .cl8{
     background: #00fa9a;
 }
 .cl9{
     background: #2e8b57;
 }
+
 .cl10{
     background: #006400;
 }
@@ -310,6 +317,15 @@ div{
 }
 .cl12{
     background: #808000;
+}
+.cl121{
+	background: #66CDAA;
+}
+.cl122{
+	background: #556E2F;
+}
+.cl123{
+	background: #008080;
 }
 .cl13{
     background: #adff2f;
@@ -343,4 +359,10 @@ div{
 }
 .cl23{
     background: #800000;
+}
+.cl24{
+	background: #bc8f8f;
+}
+.cl25{
+	background: #f4a460;
 }
