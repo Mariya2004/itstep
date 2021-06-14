@@ -1,0 +1,61 @@
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -98px;
+    left: -107px;
+  }
+
+  #triangle-up, #triangle-up2 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    position: absolute;
+    
+  }
+
+  #triangle-up{
+      top: -175px;
+      left: -95px;
+  }
+
+  #triangle-up2{
+      right: -75px;
+      top: -175px;
+  }
+
+  #diamond-shield {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid rgb(250, 145, 206);
+    position: relative;
+    top: -50px;
+  }
+  #diamond-shield:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid rgb(250, 145, 206);
+  }

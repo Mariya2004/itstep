@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.test-radio{
+    width: 165px;
+    position: relative;
+}
+
+input{
+    display: none;
+    
+}
+
+label{
+    cursor: pointer;
+}
+
+label::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(11, 85, 11);
+    border-radius: 50%;
+    top: -3px;
+    left: -30px;
+}
+
+input:checked+label::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(11, 85, 11);
+    border-radius: 50%;
+    top: 4px;
+    left: -23px;
+}
