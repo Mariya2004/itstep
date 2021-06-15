@@ -14,7 +14,7 @@ html, body{
 #circle {
     width: 300px;
     height: 300px;
-    background: red;
+    background: rgb(192, 188, 188);
     border-radius: 50%;
     position: absolute;
     top: -98px;
@@ -26,36 +26,92 @@ html, body{
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
+    border-bottom: 100px solid rgb(192, 188, 188);
     position: absolute;
     
   }
 
   #triangle-up{
-      top: -175px;
-      left: -95px;
+      top: -151px;
+      left: -120px;
+      transform: rotate(-35deg);
   }
 
   #triangle-up2{
-      right: -75px;
-      top: -175px;
+      right: -107px;
+      top: -151px;
+      transform: rotate(36deg);
   }
 
-  #diamond-shield {
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-bottom: 20px solid rgb(250, 145, 206);
+  #heart {
     position: relative;
-    top: -50px;
+    width: 100px;
+    height: 90px;
+    transform: rotate(180deg);
+    top: 45px;
+    left: -5px;
   }
-  #diamond-shield:after {
-    content: '';
+  #heart:before,
+  #heart:after {
     position: absolute;
-    left: -50px;
-    top: 20px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-top: 70px solid rgb(250, 145, 206);
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(238, 139, 139);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  #circle2, #circle3{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  #circle2{
+    top: 0px;
+    left: -35px;
+  }
+
+  #circle3{
+    top: 0;
+    left: 65px;
+  }
+
+  #circle4{
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 56px;
+    left: 30px;
+  }
+
+  #circle5, #circle6{
+    width: 30px;
+    height: 30px;
+    background: rgb(125, 125, 248);
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  #circle6{
+    top: 15px;
+    left: -25px;
+  }
+
+  #circle5{
+    top: 15px;
+    left: 75px;
   }
