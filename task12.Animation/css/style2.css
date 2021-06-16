@@ -1,0 +1,180 @@
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    background: rgb(192, 188, 188);
+    border-radius: 50%;
+    position: absolute;
+    top: -98px;
+    left: -107px;
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+  }
+
+  #triangle-up, #triangle-up2 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(192, 188, 188);
+    position: absolute;
+    
+  }
+
+  #triangle-up{
+      top: -151px;
+      left: -120px;
+      transform: rotate(-35deg);
+  }
+
+  #triangle-up2{
+      right: -107px;
+      top: -151px;
+      transform: rotate(36deg);
+  }
+
+  #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    transform: rotate(180deg);
+    top: 45px;
+    left: -5px;
+  }
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(238, 139, 139);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  #circle2, #circle3{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  #circle2{
+    top: 0px;
+    left: -35px;
+  }
+
+  #circle3{
+    top: 0;
+    left: 65px;
+  }
+
+  #circle4{
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 56px;
+    left: 30px;
+  }
+
+  #circle4:hover{
+      animation-name: triangle;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+  }
+
+  #circle5, #circle6{
+    width: 30px;
+    height: 30px;
+    background: rgb(125, 125, 248);
+    border-radius: 50%;
+    position: absolute;
+    
+  }
+
+  #circle5:hover, #circle6:hover{
+    animation-name: eyes;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+  }
+
+  #circle6{
+    top: 15px;
+    left: -25px;
+  }
+
+  #circle5{
+    top: 15px;
+    left: 75px;
+  }
+
+  .start, .end{
+    position: fixed;
+    top: 200px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    color: purple;
+    padding: 10px;
+    background: rgb(240, 212, 243);
+    border-radius: 10%;
+}
+
+.start{
+    left: 830px;
+}
+
+.end{
+    left: 980px;
+}
+
+#circle:target{
+    background: rgb(66, 66, 66);
+}
+
+@keyframes eyes{
+    0%{
+        top: 15px;
+
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes triangle{
+    0%{
+       
+        background: black;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        background: black;
+    }
+}
