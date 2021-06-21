@@ -17,9 +17,6 @@ ul.menu1 > li{
     position: relative;
    transform: rotate(-45deg);
    margin-right: -141px;
-   
-
-   
 }
 
 ul.menu1 > li > a{
@@ -37,8 +34,6 @@ ul.menu1 > li > a{
 
 ul.menu1 > li > a:hover{
     background-color: #003c84;
-    
-    
 }
 
 ul.menu1 > li:not(:last-child) > a::after{
@@ -76,7 +71,6 @@ ul.menu2 > li > a{
     display: block;
     padding: 10px;
     text-decoration: none;
-
 }
 
 ul.menu1 li:hover > ul.menu2{
