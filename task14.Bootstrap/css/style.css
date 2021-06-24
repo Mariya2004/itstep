@@ -114,7 +114,7 @@ header{
     display: none;
     width: 107px;
     left: 22px;
-    top: 45px;
+    top: 40px;
     list-style: none !important;
     zoom: 1;
     z-index: 11;
@@ -150,7 +150,7 @@ header{
   display: none;
     width: 107px;
     left: 108px;
-    top: 30px;
+    top: 22px;
     list-style: none !important;
     zoom: 1;
     z-index: 11;
@@ -426,7 +426,7 @@ a.btn:hover, a.news_btn:hover{
 }
 
 footer{
-    padding-top: 35px;
+    padding-top: 55px;
     padding-bottom: 52px;
     border-top: 3px solid #c7c7c7;
     margin-bottom: 183px;
@@ -455,4 +455,21 @@ ul.footer_menu > li > a {
 
 ul.footer_menu > li > a.active{
     color: #e17a31;
+}
+
+.icons{
+    list-style: none;
+}
+
+.icons > li{
+    margin-right: 8px;
+}
+
+.icons > li > a:hover{
+    opacity: 0.5;
+}
+
+.privacy > a{
+    text-decoration: none;
+    color: #606060;
 }
