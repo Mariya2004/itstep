@@ -114,7 +114,7 @@ header{
     display: none;
     width: 107px;
     left: 22px;
-    top: 40px;
+    top: 43px;
     list-style: none !important;
     zoom: 1;
     z-index: 11;
@@ -139,6 +139,10 @@ header{
     text-transform: uppercase;
 } 
 
+.li_hover{
+    padding-bottom: 20px;
+}
+
 .main-menu > li > ul > li > a:hover{
     color: #dc6511;
 }
@@ -158,6 +162,7 @@ header{
     padding: 35px 21px 35px 21px;
     margin: 0;
     text-align: left;
+    
 }
 .main-menu > li > ul > li > ul > li {
     list-style: none;
@@ -199,10 +204,11 @@ header{
 
 .wrapper{
     background: #fff;
-    margin-top: 100px;
+    margin: -70px auto 150px auto;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+    max-width: 1340px !important;
+    z-index: 10000;
 }
 
 .section1{
@@ -316,6 +322,11 @@ strong{
 
 figure{
     position: relative;
+    filter: opacity(100%);
+}
+
+figure:hover{
+    filter: opacity(50%);
 }
 
 em{
@@ -429,7 +440,7 @@ footer{
     padding-top: 55px;
     padding-bottom: 52px;
     border-top: 3px solid #c7c7c7;
-    margin-bottom: 183px;
+    
     padding-left: 90px;
     padding-right: 90px;
 }
@@ -472,4 +483,42 @@ ul.footer_menu > li > a.active{
 .privacy > a{
     text-decoration: none;
     color: #606060;
+}
+.main-slider .carousel-item{
+    width: 100%;
+    height: 620px;
+    background-size: cover;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.main-slider .carousel-indicators button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 5px;
+    background: #fff;
+    border: 0;
+    opacity: 1;
+}
+.main-slider .carousel-indicators button.active, .main-slider .carousel-indicators button:hover{
+    background: #dc6511;
+}
+
+@media (max-width:1169px){
+    .wrapper{
+        max-width: 100% !important;
+    }
+}
+@media (min-width:1170px){
+    .wrapper{
+        margin-top: -70px;
+    }
+    .main-slider .carousel-indicators{
+        margin-bottom: 100px;
+    }
+    .main-slider .carousel-item{
+        height: 642px;
+    }
 }
