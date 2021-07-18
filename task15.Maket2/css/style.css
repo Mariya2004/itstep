@@ -1,0 +1,281 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+.header-blue{
+    background: #365699;
+    padding-top: 37px;
+    padding-bottom: 38px;
+    padding-left: 92px;
+    padding-right: 99px;
+}
+
+.header-logo{
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 767px) {
+    .header-logo{
+        justify-content: center;
+    }
+
+    .header-address{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-white-2{
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .icons, .header-phone{
+        margin-left: 30px;
+    }
+
+    .header-phone{
+        margin-top: 10px;
+    }
+}
+
+.header-logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-address{
+    color: #e7e9ea;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.header-white{
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 90px;
+}
+
+.header-menu{
+
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu li{
+    list-style: none;
+}
+
+.main-menu li a{
+    display: block;
+    font-size: 18px;
+    line-height: 1.11111;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.main-menu li a:hover, .main-menu li a.active{
+    color: #365699;
+    border-bottom: 4px solid rgb(54, 86, 153);
+}
+
+li.second-menu{
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.menu-2{
+    position: absolute;
+    top: 100%;
+    min-width: 200px;
+    padding: 10px 0 10px;
+    background: #365699;
+    z-index: 2;
+    display: none;
+    box-sizing: border-box;
+}
+
+.menu-2 li {
+    box-sizing: border-box;
+}
+
+.menu-2 li a{
+    box-sizing: border-box;
+}
+
+.menu-3{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px 0 10px;
+    z-index: 4;
+    background: #516fb5;
+    text-align: left;
+    margin-left: -1px;
+    display: none;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+
+.menu-3 li a{
+    text-decoration: none;
+    border-bottom: none !important;
+    box-sizing: border-box;
+}
+
+.third-menu{
+    position: relative;
+}
+
+.menu-2 li a:hover, .menu-3 li a:hover{
+    color: #cad7fa;
+    text-decoration: none;
+}
+
+li.second-menu:hover > .menu-2{
+    display: block;
+}
+
+li.third-menu:hover > .menu-3{
+    display: block;
+}
+
+.menu-2 li a{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFF;
+    font-weight: 400;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    
+}
+
+.span-img2{
+    display: inline-block;
+    background: url(../img/menu-marker2.png) no-repeat;
+    width: 6px;
+    height: 7px;
+    position: relative;
+    left: 105px;
+    top: -3px;
+}
+
+.menu-2 li a span{
+
+} 
+
+.header-phone{
+    width: 140px;
+}
+
+.header-phone a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-phone a:hover{
+    color: #365699;
+    border-bottom: 4px solid rgb(54, 86, 153);
+}
+
+
+.facebook, .twitter{
+    line-height: 40px;
+    background: rgb(231, 233, 234);
+    margin-right: 10px;
+}
+
+.facebook{
+    padding: 0 17px;
+}
+
+.facebook:hover, .facebook a:hover{
+    background: #365699;
+    color: white;
+}
+
+.twitter:hover{
+    background: #55acee;
+    
+}
+
+.twitter{
+    padding: 0 9px;
+    margin-right: 30px;
+}
+
+.twitter img{
+    width: 25px;
+    height: 25px;
+}
+
+.facebook a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(59, 89, 152);
+    font-weight: bold;
+}
+
+.section-1{
+    background: url(../img/bg-img-1.jpg);
+}
+
+.section-2{
+    background: #e7e9ea;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    padding-left: 60px;
+}
+
+.find{
+    font-size: 36px;
+    line-height: 1.38889;
+    color: #a1a9ac;
+    font-weight: bold;
+}
+
+.btn{
+    padding-top: 26px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    background: #2d7662;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 25px 70px 27px;
+    letter-spacing: 1.1px;
+    border-radius: 0;
+}
+
+.section-2 input{
+    padding: 30px 70px 30px 15px;
+    background: #fff;
+    border: none;
+    width: 600px;
+}
