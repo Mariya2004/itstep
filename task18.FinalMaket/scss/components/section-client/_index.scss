@@ -1,0 +1,95 @@
+.section-client{
+    background: url(../img/testimonials-bg.png) no-repeat;
+    background-size: cover;
+    padding-top: 15px;
+    padding-left: 145px;
+    @media (max-width: 1199px) {
+        padding-left: 0;
+    }
+    .section-client-text{
+        .section-client-text-p{
+                font-size: 42px;
+                font-family: "Palatino Linotype", sans-serif;
+                color: rgb(255, 255, 255);
+                font-style: italic;
+                line-height: 1.945; 
+                padding-top: 55px;
+                @media (max-width: 1199px) {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 32px;
+                }
+        }
+        h2{
+                font-size: 44px;
+                font-family: "Montserrat", sans-serif;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 0.96;
+                margin-bottom: 47px;
+                @media (max-width: 1199px) {
+                    text-align: center;
+                }
+                @media (max-width: 576px) {
+                    font-size: 43px;
+                }
+        }
+        .section-client-text-text{
+                font-size: 19px;
+                font-family: "Montserrat", sans-serif;
+                color: rgb(255, 255, 255);
+                line-height: 1.2;
+                font-style: italic;
+                position: relative;
+                padding-left: 60px;
+                margin-bottom: 80px;
+                &::before{
+                    content: url(../img/quote.png);
+                    position: absolute;
+                    top: -20px;
+                    left: 7px;
+                }
+                @media (max-width: 1199px) {
+                    text-align: center;
+                }
+                @media (max-width: 576px) {
+                    font-size: 17px;
+                }
+        }
+        .section-client-text-stars{
+            @media (max-width: 1199px) {
+                text-align: end;
+                padding-right: 30px;
+            }
+            padding-left: 60px;
+            img{
+                margin-bottom: 30px;
+            }
+            .section-client-text-client{
+                    font-size: 22px;
+                    font-family: "Montserrat", sans-serif;
+                    color: rgb(255, 255, 255);
+                    line-height: 1.2;   
+                    @media (max-width: 576px) {
+                        font-size: 17px;
+                    } 
+            }
+        }
+    }
+    .section-client-img{
+        margin-left: 50px;
+        @media (max-width: 1199px) {
+            text-align: center;
+            margin-left: 0;
+        }
+        @media (max-width: 767px) {
+            width: 320px;
+            margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+        }
+    }
+}

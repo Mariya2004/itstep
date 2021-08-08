@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(./fonts/Montserrat-SemiBold.ttf); }
+.section-2-img {
+  margin-top: 70px; }
+  @media (max-width: 1199px) {
+    .section-2-img {
+      width: 400px;
+      margin: 70px auto auto auto; } }
+  @media (max-width: 1199px) {
+    .section-2-img img {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .section-2-img {
+      width: 320px; } }
+
+.section-2 {
+  background: url(../img/world-map.png) no-repeat;
+  background-size: cover; }
+
+.section-2 .section-2-text .section-2-text-p {
+  margin-top: 105px;
+  font-size: 33px;
+  font-family: "Palatino Linotype";
+  color: #484848;
+  font-style: italic;
+  line-height: 1.04; }
+  @media (max-width: 1199px) {
+    .section-2 .section-2-text .section-2-text-p {
+      text-align: center; } }
+  @media (max-width: 576px) {
+    .section-2 .section-2-text .section-2-text-p {
+      font-size: 32px; } }
+.section-2 .section-2-text h2 {
+  font-size: 51px;
+  font-family: 'Montserrat', sans-serif;
+  color: #484848;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 22px; }
+  @media (max-width: 1199px) {
+    .section-2 .section-2-text h2 {
+      text-align: center; } }
+  @media (max-width: 576px) {
+    .section-2 .section-2-text h2 {
+      font-size: 43px; } }
+@media (max-width: 1199px) {
+  .section-2 .section-2-text .mb-4 {
+    justify-content: center; } }
+@media (max-width: 767px) {
+  .section-2 .section-2-text .mb-4 {
+    width: 370px;
+    margin: 0 auto; } }
+.section-2 .section-2-text .nav-pills .active {
+  background-color: #f42267;
+  box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  color: #fff; }
+@media (max-width: 1199px) {
+  .section-2 .section-2-text .nav-pills .nav-item {
+    justify-content: center; } }
+@media (max-width: 767px) {
+  .section-2 .section-2-text .nav-pills .nav-item {
+    margin-bottom: 20px; } }
+.section-2 .section-2-text .nav-pills .nav-item .nav-link {
+  font-size: 13px;
+  font-family: "Montserrat",sans-serif;
+  color: #484848;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0 8px;
+  outline: none; }
+  .section-2 .section-2-text .nav-pills .nav-item .nav-link.active {
+    color: #fff; }
+.section-2 .section-2-text .tab-content .tab-pane {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1d1d;
+  line-height: 1.786;
+  margin-top: 27px;
+  height: 104px; }
+  @media (max-width: 1199px) {
+    .section-2 .section-2-text .tab-content .tab-pane {
+      text-align: center; } }
+@media (max-width: 1199px) {
+  .section-2 .section-2-text .section-2-text-action {
+    text-align: center; } }
+.section-2 .section-2-text .section-2-text-action .btn {
+  font-size: 15px;
+  box-shadow: 0 10px 0 #ff5990;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: #f42267;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px; }
+  .section-2 .section-2-text .section-2-text-action .btn:hover {
+    opacity: 70%; }
+
+/*# sourceMappingURL=index.css.map */

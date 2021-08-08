@@ -1,0 +1,93 @@
+.section-form{
+    padding-top: 85px;
+    padding-bottom: 80px;
+    background: url(../img/pink-bg.png);
+    h2{
+            font-size: 48px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 0.96;
+            text-align: center;   
+            margin-bottom: 25px;
+            @media (max-width: 576px) {
+                font-size: 43px;
+            }
+    }
+    .section-form-p{
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 0.96;
+            text-align: center; 
+            margin-bottom: 30px;
+            @media (max-width: 576px) {
+                font-size: 32px;
+            }
+    }
+    .section-form-text{
+            font-size: 17px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.404;
+            text-align: center;  
+            width: 1110px;
+            margin: auto auto 65px auto;
+            @media (max-width: 1199px) {
+                width: 670px;
+            }
+            @media (max-width: 767px) {
+                width: 380px;
+                
+            }
+            
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        @media (max-width: 1199px) {
+            text-align: center;
+        }
+        input{
+            height: 51px;
+            background-color: rgba(255, 255, 255, .35);
+            color: #fff;
+            border: 0;
+            padding-left: 40px;
+            padding-right: 220px;
+            margin-bottom: 20px;
+            border-radius: .25rem;
+            outline: none;
+            margin-right: 30px;
+            &::placeholder{
+                color: $white;
+                font-family: 'Montserrat', sans-serif;
+            }
+            @media (max-width: 1199px) {
+                margin-right: 0;
+            }
+            @media (max-width: 576px) {
+                padding-right: 170px;
+            }
+        }
+        .section-form-action{
+            .btn-purple{
+                    background-color: rgb(75, 45, 127);
+                     box-shadow: 0 7px 0px #a57ee9 ;
+                    border-radius: 10px;
+                    padding: 10px 25px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    margin: 0 auto;
+                    &:hover{
+                        opacity: 70%;
+                    }    
+            }
+        }
+    }
+}

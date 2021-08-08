@@ -1,0 +1,68 @@
+
+.section-4{
+    background: url(../img/lets-grow.png) no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .section-4-p{
+        font-style: italic;
+        font-size: 48px;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        text-align: center;
+        margin-bottom: 15px;
+        color: $white;
+        @media (max-width: 576px) {
+            font-size: 32px;
+        }
+    }
+    .section-4-heading{
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 40px;
+        color: $white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        @media (max-width: 576px) {
+            font-size: 43px;
+        }
+    }
+    .section-4-text{
+        font-weight: 400;
+        line-height: 1.5;
+        color: $white;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 20px;
+        width: 930px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        font-family: "Montserrat", sans-serif;
+        @media (max-width: 767px) {
+            width: 350px;
+            
+        }
+        @media (max-width: 576px) {
+            font-size: 17px;
+        }
+    }
+    .section-4-action{
+        text-align: center;
+        .btn{
+            box-shadow: 0 10px 0 #ff5990;
+            border-radius: 10px;
+            padding: 10px 25px;
+            background-color: #f42267;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 auto;
+            &:hover{
+                opacity: 70%;
+            }
+        }
+    }
+}

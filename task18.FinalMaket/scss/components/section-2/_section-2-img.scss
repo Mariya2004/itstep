@@ -1,0 +1,17 @@
+.section-2-img{
+    margin-top: 70px;
+    @media (max-width: 1199px) {
+        width: 400px;
+        margin: 70px auto auto auto;
+    }
+    img{
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        width: 320px;
+       
+            
+    }
+}

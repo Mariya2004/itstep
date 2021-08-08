@@ -1,0 +1,43 @@
+.section-3{
+     background-color: rgb(85, 59, 129);
+    .rupor{
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 70px;
+        padding-bottom: 85px;
+        .rupor-img{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .rupor-number{
+            font-size: 50px;
+            font-family: "Montserrat", sans-serif;
+            color: $white;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 23px
+        }
+        .rupor-heading{
+            font-size: 30px;
+            color: $white;
+            text-align: center;
+            line-height: 1.2; 
+            margin-bottom: 40px; 
+            font-family: "Montserrat", sans-serif;
+        }
+        .rupor-text{
+            font-size: 13px;
+             font-family: "Montserrat", sans-serif;
+             color: rgba(143, 143, 143, 0.412);
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
+    .rupor-2{
+        background: rgb(75, 45, 127);   
+        
+    }
+}
+

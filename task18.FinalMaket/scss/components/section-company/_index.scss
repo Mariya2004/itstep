@@ -1,0 +1,90 @@
+.section-company{
+    background: url(../img/world-map.png) no-repeat;
+    background-size: cover;
+    .section-company-main{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        @media (max-width: 576px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .section-company-text{
+            h3{
+                    font-size: 23px;
+                    font-family: "Poppins", sans-serif;
+                    color: rgb(75, 45, 127);
+                    font-weight: bold;
+                    line-height: 1.2; 
+                    margin-bottom: 30px; 
+                    @media (max-width: 1199px) {
+                        text-align: center;
+                    }
+            }
+            .section-company-text-menu{
+                ul{
+                    padding-left: 10px !important;
+                    @media (max-width: 1199px) {
+                        text-align: center;
+                        padding-left: 0 !important;
+                        margin-bottom: 40px;
+                    }
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: #171717;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+        .section-company-img-1{
+            margin-bottom: 20px;
+            @media (max-width: 1199px) {
+                text-align: center;
+            }
+        }
+        .section-company-img{
+            @media (max-width: 1199px) {
+                text-align: center;
+            }
+        }
+        .section-company-img-2{
+            @media (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+footer{
+    padding-top: 55px;
+    padding-bottom: 45px;
+    background: #f6f6f6;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 706px) {
+            flex-wrap: wrap;
+        }
+        li{
+            padding-left: 16px;
+            padding-right: 16px;
+            list-style: none;
+            @media (max-width: 991px) {
+                padding-left: 0;
+            }
+            
+            a{
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 19px;
+                color: #171717;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.section-1 {
+    background: url(../img/header-background.png) no-repeat;
+    background-size: cover;
+    @media (max-width: 1199px) {
+        .logo{
+            text-align: center;
+        }
+    }
+}
+
+header {
+    padding: 45px 75px;
+    .pos-f-t{
+        .bg-dark{
+            background-color: transparent !important;
+            .navbar-toggler{
+                border: none;
+            
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        padding: 45px 20px;
+    }
+}
+
+ul.main-menu {
+    list-style: none;
+    padding-top: 20px;
+    @media (max-width: 1199px) {
+        margin: 0 auto;
+    }
+    li {
+        a {
+            text-decoration: none;
+            color: $white;
+            margin-left: 40px;
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+}
+
+
+
